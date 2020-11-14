@@ -1,0 +1,120 @@
+* {
+  background: rgb(207, 248, 179);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: yellow;
+}
+
+.card {
+  width: 35rem;
+  min-height: 80vh;
+  padding: 0rem 5rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);   
+}
+
+.united {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.united img {
+  border-radius: 50px;
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(216, 48, 42, 0.75),
+    rgba(54, 99, 145, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.information h1 {
+  font-size: 2.5rem;
+  transition: all 0.75s ease-out;
+}
+
+.information h3 {
+  font-size: 1.4rem;
+  padding: 2rem 0rem;
+  color: rgb(95, 4, 95);
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+
+.links button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(95, 4, 95);
+}
+
+button.active {
+  background: rgb(35, 5, 165);
+  color: white;
+}
+
+.share {
+  margin: 5rem;
+  transition: all 0.75s ease-out;
+}
+
+.share button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: brown;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.social  {
+  margin: 0 10px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
